@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {projectFirestore} from '../config/firebase';
 const NoteView = ({noteId}) => {
+  // eslint-disable-next-line no-unused-vars
   const [note, setNote] = useState(null);
   const [notebody, setNoteBody] = useState('');
   const [notetitle, setNoteTitle] = useState('');
