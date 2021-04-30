@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const Title = () => {
-    return (
-        <>
-         <p className="title">keep my notes</p>   
-        </>
-    )
-}
+  return (
+    <>
+      <p className='title'>
+        <a href='/'>keep my notes</a>
+      </p>
+    </>
+  );
+};
 
-export default Title
+export default Title;
