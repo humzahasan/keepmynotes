@@ -32,8 +32,6 @@ const NoteView = ({noteId}) => {
     });
   };
 
-
-
   return (
     <div className='noteview'>
       {noteId && (
@@ -58,7 +56,6 @@ const NoteView = ({noteId}) => {
             <button type='submit' onClick={handleSubmit}>
               Update Note
             </button>
-            
           </form>
         </div>
       )}

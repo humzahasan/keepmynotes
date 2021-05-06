@@ -99,11 +99,14 @@ form>input {
 
 .notes__containerInner {
   padding: 0.5rem;
- flex: 1;
+}
+
+.notes__containerInner:hover {
+  cursor: pointer;
 }
 
 .notes__button {
-  display: inline-block;
+  max-width: 50px;
 }
 
 .notes__button > button {

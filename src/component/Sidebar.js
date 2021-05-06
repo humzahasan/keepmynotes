@@ -58,7 +58,7 @@ const Sidebar = ({setNoteId}) => {
             >
               <p className='notes__title'>{note?.title}</p>
               {note?.body ? (
-                <p className='notes__body'>{note.body}</p>
+                <p className='notes__body'>{note.body.slice(0, 60)}</p>
               ) : (
                 <p className='notes__bodydefault'>Add note description</p>
               )}
