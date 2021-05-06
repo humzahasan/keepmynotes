@@ -154,3 +154,16 @@ textarea {
   padding: 2rem;
   font-size: 1rem;
 }
+
+
+.noteview__banner {
+  padding: 2rem;
+}
+
+.noteview__banner > img {
+  margin: auto;
+  display: block;
+  width: 50%;
+  height: 50%;
+  
+}
