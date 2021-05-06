@@ -3,6 +3,7 @@
 * {
   font-family: 'Ubuntu', sans-serif;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -41,6 +42,9 @@
 
 .app__body :last-child {
   flex: 2;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
 }
 
 .sidebar {
@@ -82,12 +86,39 @@ form>input {
 
 .notes__container {
   border-bottom: 1px solid var(--primary);
-  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+ padding: 0.5rem;
 }
 
 .sidebar__notes :hover {
   background-color: var(--hovery);
+}
+
+.notes__containerInner {
+  padding: 0.5rem;
+ flex: 1;
+}
+
+.notes__button {
+  display: inline-block;
+}
+
+.notes__button > button {
+  float: right;
+  width: max-content;
+  color: black;
+  background-color: white;
+  border: 1px solid var(--primary);
+  padding: 0.5rem;
+  margin: 0.5rem;
   cursor: pointer;
+}
+
+.notes__button > button:hover {
+  color: red;
 }
 
 .notes__title {
@@ -110,7 +141,7 @@ textarea {
   margin: 0.5rem;
   border: 1px solid var(--secondary);
   outline: 1.5px solid var(--primary);
-}
+} 
 
 .noteview__heading {
   font-size: 1.3rem;
