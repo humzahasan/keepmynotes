@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {projectFirestore, timestamp} from '../config/firebase';
+import Banner from '../cover.svg'
 const NoteView = ({noteId}) => {
   // eslint-disable-next-line no-unused-vars
   const [note, setNote] = useState(null);
@@ -34,7 +35,7 @@ const NoteView = ({noteId}) => {
 
   return (
     <div className='noteview'>
-      {noteId && (
+      {noteId ? (
         <div>
           <form className='noteview__form'>
             <input
@@ -58,7 +59,9 @@ const NoteView = ({noteId}) => {
             </button>
           </form>
         </div>
-      )}
+      ) : <div className="noteview__banner">
+        <img src={Banner} alt=""/>
+      </div> }
     </div>
   );
 };

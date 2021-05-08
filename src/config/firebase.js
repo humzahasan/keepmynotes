@@ -1,4 +1,5 @@
 import firebase from 'firebase';
+
 var firebaseConfig = {
   apiKey: 'AIzaSyApGIaQLy-uEod6NaoZ17ueSq7eMUPQWUo',
   authDomain: 'keep-mynotes.firebaseapp.com',
@@ -10,5 +11,7 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const projectFirestore = firebase.firestore();
+const projectAuth = firebase.auth();
+const googleprovider = new firebase.auth.GoogleAuthProvider();
 const timestamp = firebase.firestore.FieldValue.serverTimestamp;
-export {projectFirestore, timestamp};
+export {projectFirestore, timestamp, projectAuth, googleprovider};
